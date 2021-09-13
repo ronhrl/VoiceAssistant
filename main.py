@@ -41,5 +41,18 @@ def speaking(message):
     engine.say(message)
     engine.runAndWait()
 
+
+# return the weekday name
+def query_day():
+    day = datetime.date.today()
+    print(day)
+    weekday = day.weekday()
+    print(weekday)
+    mapping = {0: 'Monday', 1: 'Tuesday', 2: 'Wednesday', 3: 'Thursday', 4: 'Friday', 5: 'Saturday', 6: 'Sunday'}
+    try:
+        speaking(f'Today is {mapping[weekday]}')
+    except:
+        psss
+
 if __name__ == '__main__':
     transform()
