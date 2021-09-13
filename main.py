@@ -126,4 +126,4 @@ def querying():
 
 
 if __name__ == '__main__':
-    transform()
+    querying()
